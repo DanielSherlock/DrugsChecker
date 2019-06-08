@@ -1,6 +1,7 @@
 ---
 
 title: Tory Drugs Contest
+script: /script.js
 
 ---
 
@@ -8,4 +9,4 @@ _"Which drugs will the UK's next prime minister have taken?"_ --- unless you cou
 
 _Sorry, I can't be bothered not to build this in production... so there's nothing here yet._
 
-<script src="{{ /script.js | relative_url }}"></script>
+<script src="{{ page.script | relative_url }}"></script>
