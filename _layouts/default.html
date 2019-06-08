@@ -1,6 +1,9 @@
 ---
 
-css: /ToryDrugsContest/assets/css/style.css
+css: /assets/css/style.css
+favicon: 
+  type: x-icon
+  address: /favicon.ico
 
 ---
 
@@ -9,7 +12,9 @@ css: /ToryDrugsContest/assets/css/style.css
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ layout.css }}">
+    <link rel="stylesheet" href="{{ layout.css | relative_url }}">
+    <link rel="shortcut icon" type="image/{{ layout.favicon.type }}"
+          href="{{ layout.favicon.address | relative_url }}">
   </head>
   <body class="px-3 my-5 markdown-body">
     <h1>{{ page.title }}</h1>
